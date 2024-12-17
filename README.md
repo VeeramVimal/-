@@ -1,25 +1,25 @@
-<img src="https://github.com/catherineisonline/advice-generator-app-frontendmentor/blob/main/images/project-preview.png?raw=true"></img>
+<img src="https://github.com/VeeramVimal/thirukkural/blob/devBase/snap/preview.png?raw=true"></img>
 
 
-<h1 align="center">Advice generator app</h1>
+<h1 align="center">Daily Thirukkural website</h1>
 
 <div align="center">
   <h3>
-    <a href="https://catherineisonline.github.io/advice-generator-app-frontendmentor/" color="white">
+    <a href="#" color="white">
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/advice-generator-app-wYjTeAeAf#comment-621bb509145c6a78f0999ec4">
+    <a href="#">
       Solution
     </a>
    <span> | </span>
-    <a href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db">
+    <a href="#">
       Challenge
     </a>
   </h3>
 </div>
 <div align="center">
-   Solution for a challenge from  <a href="https://www.frontendmentor.io/" target="_blank">frontendmentor.io</a>.
+   Solution for a challenge from  <a href="#" target="_blank">Thirukkural</a>.
 </div>
 <br>
 <br>
@@ -52,16 +52,16 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ## What I learned
 Another fun project to practice API with JavaScript. After several complex projects, this one seemed much easier than before. The only thing which isn't as perfect as I would want to is that sometimes after requesting new quote, it generates the same so the visitor wouldn't notice it and think it didn't work. Probablt there are ways to avoid it but I decided not to spend much on this right now. 
 
-P.S. 
+V.R. 
 
 Seems like the issue was cache, not repetitive quotes which is fixed now!
 
 
-## Useful resources
+<!-- ## Useful resources
 
 1. <a href="https://www.figma.com/">Figma</a> - Paste your design image to check the size of containers, width, etc.
 2. <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">Perfect Pixel</a> - Awesome Chrome extension that helps you to match the pixels of the provided design.
-3. <a href="https://api.adviceslip.com">Advice Slip API</a> - random quote generator.
+3. <a href="https://api.adviceslip.com">Advice Slip API</a> - random quote generator. -->
 
 
 
