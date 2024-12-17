@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
 :root {
-  /* --light-cyan: hsl(193, 38%, 86%); */
   --light-cyan: hsl(49, 100%, 76%);
   --light-cyan-1: hsl(46, 81%, 96%);
   --neon-green: hsl(150, 100%, 66%);
@@ -13,13 +13,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
   background-color: var(--dark-grayish-blue);
   font-family: var(--body-font);
+  font-size: 16px; /* Default font size for larger screens */
+  color: var(--white);
 }
 
 .main-container {
@@ -28,16 +34,12 @@ body {
   width: 90%;
   min-width: 10rem;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.28rem;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
   background-color: var(--grayish-blue);
   border-radius: 10px;
   padding: 3.2rem 1.5rem;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .advice-number {
@@ -47,35 +49,37 @@ body {
   font-size: 14px;
   font-weight: 800;
 }
+
 .kural {
-  /* font-size: 1.55rem; */
   font-size: 20px;
   color: var(--light-cyan);
-  /* color: red; */
   font-weight: 800;
-  padding: 0 1rem;
   padding: 1rem;
+  text-align: center;
+}
 
-}
 .kural .line-2 {
-    display: block;
-    margin-right: 10rem;
+  display: block;
+  margin-right: 2rem; /* Default margin, adjusted in media queries */
 }
+
 .quotes {
   font-size: 20px;
   color: var(--light-cyan-1);
   font-weight: 800;
   padding: 0 1rem;
 }
+
 .line {
   width: 90%;
   height: 2rem;
   display: flex;
-  flex-direction: row;
-  padding-top: 0.6rem;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  padding-top: 0.6rem;
 }
+
 .line::before,
 .line::after {
   content: " ";
@@ -84,6 +88,7 @@ body {
   width: 70%;
   height: 1px;
 }
+
 .line-image {
   background-image: url("images/pattern-divider-mobile.svg");
   background-repeat: no-repeat;
@@ -92,13 +97,12 @@ body {
   height: 2rem;
 }
 
-
 .dice-img {
   position: absolute;
   cursor: pointer;
   background-color: var(--neon-green);
   background-image: url("images/icon-dice.svg");
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
   transform: translateY(30%) translateX(-50%);
   left: 50%;
@@ -106,10 +110,13 @@ body {
   width: 4rem;
   height: 4rem;
   transition: all ease-in-out 0.3s;
-
 }
 
 @media (hover: hover) {
+  /* .dice-img:hover {
+    box-shadow: 0 0 40px rgba(82, 255, 168, 1);
+    transition: all ease-in-out 0.3s;
+  } */
   .dice-img:hover {
     box-shadow: -1px 1px 88px 12px rgba(82, 255, 168, 1);
     -webkit-box-shadow: -1px 1px 88px 12px rgba(82, 255, 168, 1);
@@ -118,8 +125,72 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 900px) {
   .main-container {
-    margin-top: 13.75rem;
+    margin-top: 10rem;
+    padding: 2rem 1rem;
+  }
+
+  .kural {
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  .kural .line-2 {
+    margin-right: 2rem; /* Adjust margin for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for tablets */
+  }
+
+  .main-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1.8rem 1rem;
+    
+  }
+
+  .kural {
+    font-size: 18px; /* Font size for smaller screens */
+  }
+
+  .kural .line-2 {
+    margin-right: 11rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Smallest font size for mobile */
+  }
+
+  .main-container {
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+  }
+
+  .kural {
+    font-size: 14px; 
+    padding: initial;
+  }
+
+  .kural .line-2 {
+    margin-right: 0; /* No margin for narrow screens */
+    margin-top: auto;
+  }
+
+  .line-image {
+    width: 8rem; 
+  }
+
+  .dice-img {
+    width: 3rem;
+    height: 3rem; 
   }
 }
